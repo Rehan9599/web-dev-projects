@@ -1,0 +1,116 @@
+.bg{
+    background-color: rgb(255, 228, 196);
+    height: fit-content;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+.name{
+    grid-area: 1/2/2/3;
+    font-size: 40px;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.pro{
+    grid-area: 2/2/3/3;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.anime{
+    grid-area: 1/-2/2/-1; 
+     display: flex;
+    justify-content: center;
+}
+.aot img{
+    border-radius: 50%;
+    margin: 0;
+}
+.goku{
+    grid-area: -2/-2/-1/-1  ;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.goku img {
+    width: 15vw; /* Responsive width based on viewport */
+    max-width: 120px; /* Optional: limit max size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+.one-piece {
+    grid-area: 3/1/4/2; /* Last row, first column */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.one-piece img {
+    width: 15vw;
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+body{
+    margin: 0;
+}
+.profile-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.profile-pic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e0e0e0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 0.5rem;
+}
+.profile-greeting {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+.profile-detail {
+    background: #fff8f0;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+.profile-detail h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 900px) {
+    .profile-details {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .profile-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+}
+

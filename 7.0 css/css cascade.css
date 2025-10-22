@@ -1,0 +1,22 @@
+
+#outer-box{
+    background-color:purple;
+
+}
+.box{
+    background-color: blue;
+    padding: 10px;
+}
+.inner-box {
+    background-color: red;
+}
+
+
+.yellow-text{
+    color: yellow;
+    border: 0cap;
+    padding: 0px;
+}
+.white-text{
+    color:white;
+}
